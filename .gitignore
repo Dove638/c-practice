@@ -8,3 +8,22 @@ Icon?
 ._*
 .Spotlight-V100
 .Trashes
+
+# C compiled files
+*.o         # Object files
+*.out       # Default GCC executable (on Linux/macOS)
+*.exe       # Windows executables
+*.a         # Static libraries
+*.so        # Shared object files (Linux/macOS)
+*.dylib     # Dynamic libraries (macOS)
+
+# Editor and backup files
+*~          # Backup files
+*.swp       # Vim swap files
+*.swo       # Vim swap files
+*.bak       # Backup files
+*.log       # Log files
+
+# Build directories (if using CMake or Makefiles)
+build/
+cmake-build-debug/
