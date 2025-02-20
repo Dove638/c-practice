@@ -1,11 +1,11 @@
-#ifndef QUEUE.H
-#define QUEUE.H
+#ifndef QUEUE_H
+#define QUEUE_H
 
 #include <stdlib.h>
 
 typedef struct node_t{
     int data;
-    node_t *next;
+    struct node_t *next;
 }
 node_t;
 
@@ -18,8 +18,21 @@ queue_t;
 
 // Function Declarations
 
+// Function Definitions (Implementation)
+node_t *initNode(int data);
 
+queue_t *initQueue();
 
+// returns 1 if true, returns 0 if false
+int empty(queue_t *queue);
+
+// adds value at a position at the tail
+void enqueue(queue_t *queue, int data);
+
+// returns value and removes least recently added element (front)
+int dequeue(queue_t *queue);
+
+void printQueue(queue_t *queue);
 
 
 
